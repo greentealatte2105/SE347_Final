@@ -2,6 +2,7 @@ import React, { useState, useEffect, useContext } from 'react';
 import './detailsSection.styles.css';
 import { useParams, useNavigate } from 'react-router-dom';
 import { BookData } from '../../../util/BookData';
+import ProductListingCard from '../../cards/product-listing-card/ProductListingCard';
 import { UserContext, CartContext } from '../../../App';
 
 const DetailsSection = () => {
@@ -49,6 +50,12 @@ const DetailsSection = () => {
                         <a onClick={handleAddToCart} className="button-primary">Add To Cart</a>
                     </div>
                 </div>
+                <h3>Others</h3>
+                    <div className="listing-container">
+                        {BookData.slice(0,4).map((book) => (
+                            <ProductListingCard key={book.id} bookData={book} />
+                        ))}
+                    </div>
             </div>
         </section>
     )

@@ -44,9 +44,10 @@ const Navbar = ({ darkTheme, darkText }) => {
         <section className={ `navbar-container ${ darkTheme ? 'background-dark relative' : 'background-transparent' } ` }>
             <div className="container flex justify-between align-center">
                 <Link to="/" className="logo">Book<span className="text-primary">worm</span></Link>
-
+                <Link to="" className={`${darkText ? 'nav-links-dark' : 'nav-links'}`}>Phone Number: 0925894705</Link>
+                <Link to="" className={`${darkText ? 'nav-links-dark' : 'nav-links'}`}>Email: thebookshelf.staff@gmail.com</Link>
                 {user ? showLogoutAndCart : showLoginandSignUp }
-            </div>
+            </div>  
         </section>
     )
 }

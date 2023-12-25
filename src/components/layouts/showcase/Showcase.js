@@ -2,7 +2,7 @@ import React from "react";
 import './showcase.styles.css'
 import Navbar from "../navbar/Navbar";
 import SearchInputForm from "../../forms/searchInputForm/SearchInputForm";
-
+import NavbarBookCategory from "../navbar/NavbarBookCategory";
 const Showcase = () => {
     return (
         <section className="showcase-container">

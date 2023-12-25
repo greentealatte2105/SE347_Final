@@ -61,3 +61,14 @@
 .relative{
     position: relative;
 }
+/* Add this to your CSS */
+.active-link {
+    color: #ff0000; /* Change to the desired color for the active link */
+    font-weight: bold; /* Optional: Change to the desired font weight */
+    margin-left: 20px;
+  }
+/* In your CSS file */
+.custom-margin-top {
+    margin-top: -75px;
+}
+  
