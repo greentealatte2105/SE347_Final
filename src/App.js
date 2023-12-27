@@ -11,6 +11,8 @@ import Login from "./pages/loginpage/Login";
 import SignUp from "./pages/signup-page/Signup";
 import ScrollToTop from "./components/util/ScrollToTop";
 import SearchPage from "./pages/searchpage/SearchPage";
+import ShoppingCartInstructions from "./pages/howtobuypage/howToBuy";
+import Terms from "./pages/termsofusepage/termsOfUse";
 
 export const UserContext = createContext({});
 export const CartContext = createContext({});
@@ -54,6 +56,8 @@ const App = () => {
                         <Route path="/book-details/:id" element={<BookDetailsPage/>} />
                         <Route path="/signup" element={<SignUp />} />
                         <Route path="/login" element={<Login />} />
+                        <Route path="/instructions" element={<ShoppingCartInstructions/>} />
+                        <Route path="/termsofuse" element={<Terms/>} />
                     </Routes> 
                 </CartContext.Provider>
             </UserContext.Provider>

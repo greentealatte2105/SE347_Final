@@ -54,8 +54,7 @@ const Footer = () => {
             <ul>
               <li><a href="/instructions">How to Buy</a></li>
               <li><a href="/cart">Check Out</a></li>
-              <li><a href="/shipping-returns">Shipping & Return Policy</a></li>
-              <li><a href="/terms-of-service">Terms of Service</a></li>
+              <li><a href="/termsofuse">Terms of Service</a></li>
             </ul>
           </Col>
           <Col md={4}>
